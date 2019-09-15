@@ -259,10 +259,144 @@ footer .social-links {
     text-decoration: none;
     
 }
+@media only screen and (max-width: 414px) {
+    body {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        align-self: center;
+        width: 200%;
+    }
+    
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    /*headedr part*/   
+    .options {
+        font-size: 30vw;
+    }
+    .menu {
+        display: none;
+    }
 
+    .logo {
+        width: 50vw;
+    }
+
+    /*big-hero part*/
+    .big-hero .container h2 {
+        font-size: 3rem;
+    }
+
+    .big-hero .container p {
+        font-size: 6vw;
+        margin-left: 0;
+        margin-right: 0; 
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .big-hero .container img {
+        width: 55vw;
+        height: auto;    
+        margin-bottom: 0;
+    }
+
+    .social-links{
+        margin-top: 0;
+        margin-bottom: 20vh;
+    }
+
+    .social-links a i{
+        font-size: 4em;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        
+    }
+
+    /*green-area part*/
+    .container.post h2 {
+        font-size: 2rem;
+    }
+
+    .container.post ul  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+        width: 100%;
+    }
+
+    .container.post li  {
+        margin: 25px 0;
+    }
+
+    .container.post article  {
+        width: 80vw;
+        font-size: 6vw;
+        text-align: justify;
+    }
+
+    /*about part*/
+    .about .container { 
+        margin-bottom: 10vw;
+    }
+
+    .about .container h2 {
+        font-size: 5vh;
+    }
+
+    .about .container .bio-info img {
+        height: 20vh;
+        margin: 0 0;
+    }
+
+    .about .container .bio-info p {
+        font-size: 3vh;
+        text-align: left;
+    }
+
+    .about .container .contact label {
+        font-size: 5vh;
+        font-weight: bold;
+    }
+
+
+    .about .container .contact input {
+        font-size: 2em;
+    }
+
+    .about .container .contact textarea {
+        font-size: 2em;
+    }
+
+    /*footer part*/
+    footer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .social-links{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    footer >.social-links a i{
+        font-size: 15vh;
+        margin-left: 4vw;
+        margin-right: 4vw; 
+    }
+
+    footer p {
+        line-height: normal;
+        font-size: 1rem;
+    }
+}
 @media only screen and (min-width: 1440px) {
-
-    /*TODO: FALTA CSS*/ 
     .container {
         width: 80%;
         margin: 0 auto;
@@ -279,35 +413,30 @@ footer .social-links {
     .hide-desktop {
         display: none;
     }
-
     .show-desktop {
         display: contents;
     }
-
     .menu li:nth-last-of-type(1) a {
         color: #FA3E4C;
     }
+    .logo {
+        width: 10vw;
+    }
     /*big-hero part*/
-
-
     .social-links{
         margin-top: 0;
         margin-bottom: 0;
     }
-
     .social-links a i{
         font-size: 5vw;
         margin-left: 1vw;
-        margin-right: 1vw;
-        
+        margin-right: 1vw;   
     }
-
     .show-desktop i {
         font-size: 5vw;
         margin-top: 2vw;
         margin-bottom: 5vw;
     }
-
     /*green-area part*/
     .container.post ul {
         display: flex;
@@ -365,141 +494,10 @@ footer .social-links {
     footer p {
         line-height: normal;
         font-size: 1rem;
-        margin-top: 1vw;
-        margin-bottom: 2vw;
     }
 
 }
-
-/*@media only screen and (min-width: 768px) {
-  
-    .post ul {
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .post ul li {
-        min-height: 350px;
-        max-height: 3500px;
-        margin: 1rem 2rem;
-        flex: 1 0 300px;
-    }
-
-
-    .logo {
-        width: 150px;
-        margin: 1.5em;
-    }
-
-    .show-desktop {
-        display: block;
-    }
-
-    .hide-desktop {
-        display: none;
-    }
-
-    .menu {
-        background-color: #112935; 
-        position: static;
-        z-index: 20;
-        width: auto;
-        height:auto;
-        display: flex;
-        margin-top: 1em;
-    }
-
-    /*about part
-    .about .container .contact {
-        grid-area: contact;
-        margin-bottom: 10vw;
-    }
-
-    /*footer part
-    footer .social-links{
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-
-    footer .social-links a i{
-        font-size: 10vw;
-        margin-left: 4vw;
-        margin-right: 4vw; 
-    }
-
-    footer p {
-        line-height: normal;
-        font-size: 1rem;
-        margin-top: 1vw;
-        margin-bottom: 2vw;
-    }
-}*/
-
-
-/* Pesonalizando estilo para tablets */
-/*@media only screen and (min-width: 768px) {
-  
-    .post ul {
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .post ul li {
-        min-height: 350px;
-        max-height: 3500px;
-        margin: 1rem 2rem;
-        flex: 1 0 300px;
-    }
-
-
-    .logo {
-        width: 150px;
-        margin: 1.5em;
-    }
-
-    .show-desktop {
-        display: block;
-    }
-
-    .hide-desktop {
-        display: none;
-    }
-
-    .menu {
-        background-color: #112935; 
-        position: static;
-        z-index: 20;
-        width: auto;
-        height:auto;
-        display: flex;
-        margin-top: 1em;
-    }
+/*@media only screen and (min-width: 1024px) {
 
     /*TODO: FALTA CSS*
-}
-
-
-@media only screen and (min-width: 1024px) {
-
-    /*TODO: FALTA CSS 
-
-
-
-}
-
-
-@media only screen and (min-width: 1440px) {
-
-    /*TODO: FALTA CSS 
-    .container {
-        width: 80%;
-        margin: 0 auto;
-        max-width: 1440px;
-    }
 }*/
