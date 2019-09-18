@@ -259,7 +259,7 @@ footer .social-links {
     text-decoration: none;
     
 }
-@media only screen and (max-width: 414px) {
+@media only screen and (min-width: 320px) and (max-width: 414px) {
     body {
         display: flex;
         flex-flow: column wrap;
@@ -267,7 +267,6 @@ footer .social-links {
         align-self: center;
         width: 200%;
     }
-    
     .container {
         width: 80%;
         margin: 0 auto;
@@ -279,16 +278,13 @@ footer .social-links {
     .menu {
         display: none;
     }
-
     .logo {
         width: 50vw;
     }
-
     /*big-hero part*/
     .big-hero .container h2 {
         font-size: 3rem;
     }
-
     .big-hero .container p {
         font-size: 6vw;
         margin-left: 0;
@@ -296,7 +292,6 @@ footer .social-links {
         padding-left: 0;
         padding-right: 0;
     }
-
     .big-hero .container img {
         width: 55vw;
         height: auto;    
@@ -305,72 +300,55 @@ footer .social-links {
 
     .social-links{
         margin-top: 0;
-        margin-bottom: 20vh;
+        margin-bottom: 3vw;
     }
-
     .social-links a i{
         font-size: 4em;
         margin-left: 5vw;
-        margin-right: 5vw;
-        
+        margin-right: 5vw;   
     }
-
     /*green-area part*/
-    .container.post h2 {
-        font-size: 2rem;
-    }
-
-    .container.post ul  {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-self: center;
+    .post {
         width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-content: center;
     }
-
-    .container.post li  {
-        margin: 25px 0;
+    .post h2 {
+        font-size: 9.5vw;
     }
-
-    .container.post article  {
-        width: 80vw;
-        font-size: 6vw;
-        text-align: justify;
+    .post article  {
+        width: 100vw;
+        font-size: 8vw;
     }
-
     /*about part*/
     .about .container { 
         margin-bottom: 10vw;
     }
-
     .about .container h2 {
-        font-size: 5vh;
+        font-size: 9.5vw;
     }
-
-    .about .container .bio-info img {
-        height: 20vh;
-        margin: 0 0;
+    .bio-info img {
+        width: 30vw;
     }
-
-    .about .container .bio-info p {
-        font-size: 3vh;
+    .bio-info p {
+        font-size: 7vw;
         text-align: left;
     }
-
-    .about .container .contact label {
-        font-size: 5vh;
+    .contact label {
+        font-size: 7vw;
         font-weight: bold;
     }
-
-
-    .about .container .contact input {
-        font-size: 2em;
+    .contact input {
+        font-size: 7vw;
     }
-
-    .about .container .contact textarea {
-        font-size: 2em;
+    .contact textarea {
+        font-size: 7vw;
     }
-
+    .contact-form input:nth-last-of-type(1) {
+        font-size: 8vw;
+    }
     /*footer part*/
     footer {
         display: flex;
@@ -379,33 +357,124 @@ footer .social-links {
         justify-content: center;
         align-items: center;
     }
-
     footer .social-links{
         margin-top: 0;
         margin-bottom: 0;
     }
-
-    footer >.social-links a i{
-        font-size: 15vh;
+    footer .social-links a i{
+        font-size: 15vw;
         margin-left: 4vw;
         margin-right: 4vw; 
     }
-
+    footer p {
+        line-height: normal;
+        font-size: 4.5vw;
+    }
+}
+@media only screen and (min-width: 415px) and (max-width: 767px) {
+    body {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        align-self: center;
+        width: 100%;
+    }
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    /*header part*/
+    .logo {
+        width: 15vw;
+    }
+    .options i {
+        font-size: 5vw;
+    }
+    /*big-hero part*/
+    .big-hero .container img {
+        width: 15vw;
+    }
+    .big-hero .container h2 {
+        font-size: 3.5vw;
+    }
+    .big-hero .container p {
+        font-size: 2.5vw;
+    }
+    .social-links {
+        margin-top: 0;
+    }
+    .social-links li {
+        margin-right: 2.5vw;
+        margin-left: 2.5;
+    }
+    .social-links i {
+        font-size: 6vw;
+    }
+    .hide-mobile {
+        display: none;
+    }
+    /*green-area part*/
+    .post {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .post h2  {
+        font-size: 2.5vw;
+    }
+    .post article {
+        font-size: 2.5vw;
+    }
+    /*about part*/
+    .about .container h2 {
+        font-size: 2.5vw;
+    }
+    .bio-info img{
+        width: 20vw;
+    }
+    .bio-info p {
+        font-size: 2.5vw;
+    }
+    .contact {
+        margin-bottom: 5vw;
+    }
+    .contact-form label {
+        font-size: 2.5vw;
+    }
+    .contact-form input {
+        font-size: 2vw;
+    }
+    .contact-form textarea {
+        font-size: 2vw;
+    }
+    /*footerpart*/
+    footer .social-links{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    footer .social-links a i{
+        font-size: 10vw;
+        margin-left: 4vw;
+        margin-right: 4vw; 
+    }
     footer p {
         line-height: normal;
         font-size: 1rem;
+        margin-top: 1vw;
+        margin-bottom: 2vw;
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     /*header part*/
-    img .logo {
+    .logo {
         width: 15vw;
         margin: 1.5em;
     }
     .menu li:nth-last-of-type(1) a {
         color: #FA3E4C;
     }
-    .container nav ul {
+    nav ul {
         margin-top: 0;
         padding: 15px 15px;
     }
@@ -446,26 +515,16 @@ footer .social-links {
         margin-bottom: 5vw;
     }
     /*green-area part*/
-    .container.post ul {
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: center;
+    .post ul{
+        display: grid;
+        grid-template-areas: "li li"
+                             "li li"
     }
-    .container.post ul li {
-        min-height: 350px;
-        max-height: 3500px;
-        /*margin: 1rem 2rem;
-        flex: 1 0 300px;
-        width: 5vw;
-        font-size: 4vw;*/
-        margin-left: 0.9vw;
-        margin-right: 0.9vw;
-        margin-bottom: 0.5vw;
-        min-width: 350px;
+    .post h2 {
         font-size: 3.5vw;
+    }
+    .post article {
+        font-size: 2.5vw
     }
     /*about part*/
     .about .container h2 {
@@ -491,13 +550,11 @@ footer .social-links {
         margin-top: 0;
         margin-bottom: 0;
     }
-
     footer .social-links a i{
         font-size: 10vw;
         margin-left: 4vw;
         margin-right: 4vw; 
     }
-
     footer p {
         line-height: normal;
         font-size: 1rem;
@@ -505,7 +562,7 @@ footer .social-links {
         margin-bottom: 2vw;
     }
 }
-@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
     .container {
         width: 80%;
         margin: 0 auto;
@@ -520,22 +577,31 @@ footer .social-links {
         display: none;
     }
     nav {
-        width: 100%;
+        width: 50%;
         display: flex;
         flex-flow: row nowrap;
         justify-content: flex-end;
-        align-items: center;;
+        align-items: center;
     }
     .menu li {
-        font-size: 2vw;
+        font-size: 1vw;
     }
     .menu li:nth-last-of-type(1) a {
         color: #FA3E4C;
     }
-    a .logo {
-        width: 15vh;
+    .logo {
+        width: 11vw;
     }
     /*big-hero part*/
+    .big-hero .container img{
+        width: 12vw;
+    }
+    .big-hero .container h2{
+        font-size: 3.5vw;
+    }
+    .big-hero .container p{
+        font-size: 1.5vw;
+    }
     .social-links{
         margin-top: 0;
         margin-bottom: 0;
@@ -553,23 +619,55 @@ footer .social-links {
     .green-area {
         margin-top: 3vw;
     }
-    .container.post ul {
+    .post {
+        width: 100%;
+    }
+    .post h2 {
+        font-size: 2vw;
+    }
+    .post ul{
+        display: grid;
+        grid-template-areas: "li li"
+                             "li li"
+        /*width: 100%;
         display: flex;
         flex-flow: row wrap;
         justify-content: flex-start;
-        align-items: center;
+        align-items: center;*/
     }
-    .container.post ul li {
-        margin-left: 1.5vw;
-        margin-right: 1.5vw;
-        margin-bottom: 0.5vw;
+    .post li {
+        /*min-width: 350px;*/
+    }
+    .post article {
+        font-size: 1.5vw;
     }
     /*about part*/
-    .about .container p {
+    .about .container h2 {
+        font-size: 2.5vw;
+    }
+    .bio-info img{
+        width: 12vw;
+    }
+    .bio-info p{
         font-size: 2vw;
     }
-    .about .container .contact {
-        margin-bottom: 5vw;
+    .contact label {
+        font-size: 1.5vw;
+    }
+    .contact input {
+        font-size: 1.5vw;
+    }
+    .contact input {
+        font-size: 1.5vw;
+    }
+    .contact textarea {
+        font-size: 1.5vw;
+    }
+    .contact-form input:nth-last-of-type(1) {
+        font-size: 1.5vw;
+    }
+    .contact {
+        margin-bottom: 3vw;
     }
     /*footer part*/
     footer {
@@ -594,7 +692,7 @@ footer .social-links {
     }
     
 }
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1280px) {
     .container {
         width: 80%;
         margin: 0 auto;
@@ -620,6 +718,16 @@ footer .social-links {
         width: 10vw;
     }
     /*big-hero part*/
+    .big-hero .container img {
+        width: 12vw;
+    }
+    .big-hero .container h2 {
+        font-size: 3.5vw
+    }
+
+    .big-hero .container p {
+        font-size: 1.5vw
+    }
     .social-links{
         margin-top: 0;
         margin-bottom: 0;
@@ -632,19 +740,28 @@ footer .social-links {
     .show-desktop i {
         font-size: 5vw;
         margin-top: 2vw;
-        margin-bottom: 5vw;
+        margin-bottom: 3vw;
     }
     /*green-area part*/
-    .container.post ul {
+    .post {
+        width: 100%;
+    }
+    .post h2 {
+        font-size: 2vw;
+    }
+    .post ul {
+        width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        flex-wrap: wrap;
+        justify-content: space-between;
         align-items: center;
     }
-    .container.post ul li {
-        margin-left: 1.5vw;
+    .post article {
+        font-size: 1.5vw;
+        /*margin-left: 1.5vw;
         margin-right: 1.5vw;
-        margin-bottom: 1.5vw;
+        margin-bottom: 1.5vw;*/
     }
     /*about part*/
     .about .container {
@@ -654,9 +771,14 @@ footer .social-links {
     }
     .about .container h2 {
         grid-area: titulo;
+        font-size: 2vw;
+    }
+    .about .container img {
+        width: 12vw;
     }
     .about .container .bio-info {
         grid-area: info;
+        font-size: 2.5vw;
     }
     .about .container .contact {
         grid-area: contact;
@@ -674,14 +796,14 @@ footer .social-links {
         margin-top: 0;
         margin-bottom: 0;
     }
-    footer >.social-links a i{
+    footer .social-links i{
         font-size: 5vw;
         margin-left: 4vw;
         margin-right: 4vw; 
     }
     footer p {
         line-height: normal;
-        font-size: 1rem;
+        font-size: 1em;
     }
 
 }
