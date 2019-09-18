@@ -398,7 +398,7 @@ footer .social-links {
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     /*header part*/
-    .logo {
+    img .logo {
         width: 15vw;
         margin: 1.5em;
     }
@@ -446,19 +446,26 @@ footer .social-links {
         margin-bottom: 5vw;
     }
     /*green-area part*/
-    .post ul {
+    .container.post ul {
         list-style: none;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-start;
+        align-items: center;
     }
-    .post ul li {
+    .container.post ul li {
         min-height: 350px;
         max-height: 3500px;
-        margin: 1rem 2rem;
+        /*margin: 1rem 2rem;
         flex: 1 0 300px;
-        font-size: 4vw;
+        width: 5vw;
+        font-size: 4vw;*/
+        margin-left: 0.9vw;
+        margin-right: 0.9vw;
+        margin-bottom: 0.5vw;
+        min-width: 350px;
+        font-size: 3.5vw;
     }
     /*about part*/
     .about .container h2 {
@@ -505,15 +512,25 @@ footer .social-links {
     }
     /*header part*/
     .hide-desktop .fas.fa-bars {
-        display: block;
-        margin: auto;
-        font-size: 5vw;
+        display: none;
+        /*margin: auto;
+        font-size: 5vw;*/
     }
     .hide-desktop .fas.fa-times {
         display: none;
     }
-    .show-desktop.hide-mobile.menu {
-        display: none;
+    nav {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        align-items: center;;
+    }
+    .menu li {
+        font-size: 2vw;
+    }
+    .menu li:nth-last-of-type(1) a {
+        color: #FA3E4C;
     }
     a .logo {
         width: 15vh;
@@ -531,23 +548,21 @@ footer .social-links {
     .hide-mobile {
         display: contents;
         font-size: 10vw;
-        margin-top: 2vw;
     }
     /*green-area part*/
-    .container.post {
-        margin-top: 5vw;
+    .green-area {
+        margin-top: 3vw;
     }
     .container.post ul {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-flow: row wrap;
+        justify-content: flex-start;
         align-items: center;
     }
     .container.post ul li {
         margin-left: 1.5vw;
         margin-right: 1.5vw;
-        margin-bottom: 1.5vw;
+        margin-bottom: 0.5vw;
     }
     /*about part*/
     .about .container p {
