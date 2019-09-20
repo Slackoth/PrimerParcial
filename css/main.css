@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
-
 /* El CSS siguiente esta pensando primero para moviles y luego para 
    Escritiorio*/
 *, ::before, ::after {
@@ -258,8 +257,8 @@ footer .social-links {
     color: white;
     text-decoration: none;
     
-}
-@media only screen and (min-width: 320px) and (max-width: 414px) {
+} /*IPhone 6/7/8 plus*/
+@media only screen and (min-width: 320px) and (max-width: 415px) {
     body {
         display: flex;
         flex-flow: column wrap;
@@ -371,7 +370,8 @@ footer .social-links {
         font-size: 4.5vw;
     }
 }
-@media only screen and (min-width: 415px) and (max-width: 767px) {
+/*Intervalo responsivo*/
+@media only screen and (min-width: 416px) and (max-width: 767px) {
     body {
         display: flex;
         flex-flow: column wrap;
@@ -395,10 +395,10 @@ footer .social-links {
         width: 15vw;
     }
     .big-hero .container h2 {
-        font-size: 3.5vw;
+        font-size: 4.5vw;
     }
     .big-hero .container p {
-        font-size: 2.5vw;
+        font-size: 3vw;
     }
     .social-links {
         margin-top: 0;
@@ -408,7 +408,7 @@ footer .social-links {
         margin-left: 2.5;
     }
     .social-links i {
-        font-size: 6vw;
+        font-size: 8vw;
     }
     .hide-mobile {
         display: none;
@@ -421,32 +421,32 @@ footer .social-links {
         align-items: center;
     }
     .post h2  {
-        font-size: 2.5vw;
+        font-size: 4.5vw;
     }
     .post article {
-        font-size: 2.5vw;
+        font-size: 3.5vw;
     }
     /*about part*/
     .about .container h2 {
-        font-size: 2.5vw;
+        font-size: 3.5vw;
     }
     .bio-info img{
         width: 20vw;
     }
     .bio-info p {
-        font-size: 2.5vw;
+        font-size: 3.5vw;
     }
     .contact {
         margin-bottom: 5vw;
     }
     .contact-form label {
-        font-size: 2.5vw;
+        font-size: 3.5vw;
     }
     .contact-form input {
-        font-size: 2vw;
+        font-size: 2.5vw;
     }
     .contact-form textarea {
-        font-size: 2vw;
+        font-size: 2.5vw;
     }
     /*footerpart*/
     footer .social-links{
@@ -465,13 +465,14 @@ footer .social-links {
         margin-bottom: 2vw;
     }
 }
+/*Intervalo responsivo*/
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     /*header part*/
     .logo {
         width: 15vw;
         margin: 1.5em;
     }
-    .menu li:nth-last-of-type(1) a {
+    .menu li a:hover {
         color: #FA3E4C;
     }
     nav ul {
@@ -491,7 +492,7 @@ footer .social-links {
         width: auto;
         height:auto;
         display: flex;
-        font-size: 3.5vw;
+        font-size: 1.5vw;
     }
     /*big-hero part*/
     .big-hero .container h2 {
@@ -562,6 +563,7 @@ footer .social-links {
         margin-bottom: 2vw;
     }
 }
+/*Ipad*/
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
     .container {
         width: 80%;
@@ -586,7 +588,7 @@ footer .social-links {
     .menu li {
         font-size: 1vw;
     }
-    .menu li:nth-last-of-type(1) a {
+    .menu li a:hover {
         color: #FA3E4C;
     }
     .logo {
@@ -692,6 +694,7 @@ footer .social-links {
     }
     
 }
+/*Desktop*/
 @media only screen and (min-width: 1280px) {
     .container {
         width: 80%;
@@ -711,7 +714,7 @@ footer .social-links {
     .show-desktop {
         display: contents;
     }
-    .menu li:nth-last-of-type(1) a {
+    .menu li a:hover {
         color: #FA3E4C;
     }
     .logo {
