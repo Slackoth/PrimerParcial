@@ -299,10 +299,10 @@ footer .social-links {
 
     .social-links{
         margin-top: 0;
-        margin-bottom: 3vw;
+        margin-bottom: 15vw;
     }
     .social-links a i{
-        font-size: 4em;
+        font-size: 3.5em;
         margin-left: 5vw;
         margin-right: 5vw;   
     }
@@ -319,7 +319,7 @@ footer .social-links {
     }
     .post article  {
         width: 100vw;
-        font-size: 8vw;
+        font-size: 7.5vw;
     }
     /*about part*/
     .about .container { 
@@ -514,6 +514,7 @@ footer .social-links {
         font-size: 10vw;
         margin-top: 2vw;
         margin-bottom: 5vw;
+        color: #0AC693;
     }
     /*green-area part*/
     .post ul{
@@ -616,6 +617,7 @@ footer .social-links {
     .hide-mobile {
         display: contents;
         font-size: 10vw;
+        color: #0AC693;
     }
     /*green-area part*/
     .green-area {
@@ -744,6 +746,7 @@ footer .social-links {
         font-size: 5vw;
         margin-top: 2vw;
         margin-bottom: 3vw;
+        color: #0AC693;
     }
     /*green-area part*/
     .post {
